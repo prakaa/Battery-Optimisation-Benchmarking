@@ -21,7 +21,7 @@ Benchmarking MIP solutions across packages in Python and Julia
     - Decent performance and access to broad range of solvers
     - Most featured, including callbacks and more problem types beyond MIP (e.g. NLP, QP, SOCP)
     - Very very good documentation that is also a good intro to optimisation
-- Downsides
-  - Has the downside of needing to learn Julia and some specific Julia syntax
-    - One option is to solve models in Julia then do everything else in Python. There is also PyCall.jl
-  - As Julia is just-in-time compiled, "time-to-first-[plot,solve]" can be long, but this can be reduced by things like PackageCompiler.jl
+  - Downsides
+    - Has the downside of needing to learn Julia and some specific Julia syntax
+      - One option is to solve models in Julia then do everything else in Python. There is also PyCall.jl
+    - As Julia is just-in-time compiled, "time-to-first-[plot,solve]" can be long, but this can be reduced by things like PackageCompiler.jl
