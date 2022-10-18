@@ -43,6 +43,7 @@ Benchmarking MIP solutions across packages in Python and Julia
     - Solution retrieval is very easy
     - Multiple solvers (though the python interfaces may be needed)
   - Downsides
+    - Locked to LP or binary MIP as of Oct 22
     - In alpha and some bugs/issues
       - Couldn't solve this model properly'
     - Stricter model definition (min only, all variables on LHS)
