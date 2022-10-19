@@ -47,7 +47,6 @@ Benchmarking MIP solutions across packages in Python and Julia
     - Relatively nice syntax for model creation
     - Very fast and could be even faster if using Pypy
     - Advanced MIP features (lazy constraints)
-    - Passing solver level args is possible
   - Downsides
     - Locked to LP or MIP
     - Locked to Cbc or Gurobi
@@ -59,6 +58,7 @@ Benchmarking MIP solutions across packages in Python and Julia
     - Vectorised model creation that can use numpy, pandas or xarray data structures
     - Solution retrieval is very easy
     - Multiple solvers (though the python interfaces may be needed)
+    - Passing solver level args is possible
   - Downsides
     - Locked to LP or binary MIP as of Oct 22
     - In alpha and some bugs/issues
