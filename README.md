@@ -61,10 +61,9 @@ Benchmarking MIP solutions across packages in Python and Julia
     - Passing solver level args is possible
   - Downsides
     - Locked to LP or binary MIP as of Oct 22
-    - In alpha and some bugs/issues
-      - Couldn't solve this model properly'
+    - In alpha
     - Stricter model definition (min only, all variables on LHS)
-    - Intertemporal constraints are awkard to construct
+    - Intertemporal constraints are awkward to construct
     
 ### pyomo
   - Pluses
