@@ -22,7 +22,6 @@ Note 3: Solution is wrong for linopy. Not sure what I'm doing wrong with linopy,
 | mip (Python)       | Yes        | ~9.8                | ~1.5                   | N/A                   |
 | linopy (Python)    | Incorrect? | -                   | -                      | -                     |
 | JuMP (Julia)       | Yes        | (~11.6, ~5.0)       | (~10.4, ~2.4)          | (~10.7, ~8.1)         |
-|--------------------|------------|---------------------|------------------------|-----------------------|
 
 ## Qualitative Comparison
 
