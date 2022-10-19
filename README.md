@@ -18,6 +18,8 @@ Benchmarking MIP solutions across packages in Python and Julia
 
 **Note 3**: Solution is wrong for linopy. Not sure what I'm doing wrong with linopy, or some issues with the package (still in alpha).
 
+**Note 3**: Times reflect rough average of 10 runs
+
 | Package (Language) | Solution?  | Cbc Solver Time (s) | Gurobi Solver Time (s) | HiGHS Solver Time (s) |
 |--------------------|------------|---------------------|------------------------|-----------------------|
 | pyomo (Python      | Yes        | ~6.7                | ~3.6                   | N/A                   |
