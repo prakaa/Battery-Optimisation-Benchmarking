@@ -40,7 +40,7 @@ Benchmarking MIP solutions across packages in Python and Julia
   - Downsides
     - Has the downside of needing to learn Julia and some specific Julia syntax
       - One option is to solve models in Julia then do everything else in Python. There is also PyCall.jl
-    - As Julia is just-in-time compiled, "time-to-first-[plot,solve]" can be long, but this can be reduced by things like PackageCompiler.jl
+    - As Julia is just-in-time compiled, "time-to-first-[plot,solve]" can be long, but this can be reduced by things like PackageCompiler.jl. See [here](https://jump.dev/JuMP.jl/stable/tutorials/getting_started/performance_tips/)
 
 ### python-mip:
   - Pluses
