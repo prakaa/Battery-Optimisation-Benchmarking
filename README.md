@@ -29,7 +29,7 @@ Benchmarking MIP solutions across packages in Python and Julia
 
 ## Qualitative Comparison
 
-- JuMP:
+### JuMP:
   - Pluses
     - Has the best syntax and is the easiest framework to write models. Retrieving solutions is fine, but could be simpler
     - Decent performance and access to broad range of solvers
@@ -42,7 +42,7 @@ Benchmarking MIP solutions across packages in Python and Julia
       - One option is to solve models in Julia then do everything else in Python. There is also PyCall.jl
     - As Julia is just-in-time compiled, "time-to-first-[plot,solve]" can be long, but this can be reduced by things like PackageCompiler.jl
 
-- python-mip:
+### python-mip:
   - Pluses
     - Relatively nice syntax for model creation
     - Very fast and could be even faster if using Pypy
@@ -53,7 +53,7 @@ Benchmarking MIP solutions across packages in Python and Julia
     - Missing some features such as indicator constraints
     - Retrieving solutions is awkward
     
-- linopy
+### linopy
   - Pluses
     - Vectorised model creation that can use numpy, pandas or xarray data structures
     - Solution retrieval is very easy
@@ -66,7 +66,7 @@ Benchmarking MIP solutions across packages in Python and Julia
     - Stricter model definition (min only, all variables on LHS)
     - Intertemporal constraints are awkard to construct
     
-- pyomo
+### pyomo
   - Pluses
     - Very mature and large user community
     - Can formulate many types of problems and has multiple extensions (e.g. stochastic programming)
