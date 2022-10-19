@@ -12,9 +12,11 @@ Benchmarking MIP solutions across packages in Python and Julia
 
 ## Bechmark Results
 
-Note 1: Julia is just-in-time compiled. The first run of a function will involve compilation, so the first run will generally always be slower. The table below reports times for first and subsequent runs as (first, subsequent)
-Note 2: Python packages are installed via `poetry`, which presumably uses `pip`. Using the `Pypy` versions of packages (where available) may improve times.
-Note 3: Solution is wrong for linopy. Not sure what I'm doing wrong with linopy, or some issues with the package (still in alpha).
+**Note 1**: Julia is just-in-time compiled. The first run of a function will involve compilation, so the first run will generally always be slower. The table below reports times for first and subsequent runs as (first, subsequent)
+
+**Note 2**: Python packages are installed via `poetry`, which presumably uses `pip`. Using the `Pypy` versions of packages (where available) may improve times.
+
+**Note 3**: Solution is wrong for linopy. Not sure what I'm doing wrong with linopy, or some issues with the package (still in alpha).
 
 | Package (Language) | Solution?  | Cbc Solver Time (s) | Gurobi Solver Time (s) | HiGHS Solver Time (s) |
 |--------------------|------------|---------------------|------------------------|-----------------------|
