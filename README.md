@@ -16,22 +16,24 @@ Benchmarking MIP solutions across packages in Python and Julia
 
 **Note 2**: Python packages are installed via `poetry`, which presumably uses `pip`. Using the `Pypy` versions of packages (where available) may improve times.
 
-**Note 3**: Solution is wrong for linopy. Not sure what I'm doing wrong with linopy, or some issues with the package (still in alpha).
+**Note 3**: Linopy is still in alpha (at time of writing), so a direct comparison is not appropriate.
 
 **Note 3**: Times reflect rough average of 10 runs
 
 | Package (Language) | Solution?  | Cbc Solver Time (s) | Gurobi Solver Time (s) | HiGHS Solver Time (s) |
 |--------------------|------------|---------------------|------------------------|-----------------------|
-| pyomo (Python      | Yes        | ~6.7                | ~3.6                   | N/A                   |
-| mip (Python)       | Yes        | ~9.8                | ~1.5                   | N/A                   |
-| linopy (Python)    | Incorrect? | -                   | -                      | -                     |
-| JuMP (Julia)       | Yes        | (~11.6, ~5.0)       | (~10.4, ~2.4)          | (~10.7, ~8.1)         |
+| pyomo (Python      | Yes        | ~7.2                | ~3.8                   | N/A                   |
+| mip (Python)       | Yes        | ~10.1               | ~1.6                   | N/A                   |
+| linopy (Python)    | Yes        | ~6.2                | ~2.7                   | ~5.8                  |
+| JuMP (Julia)       | Yes        | (~12.2, ~5.5)       | (~10.4, ~2.4)          | (~10.0, ~7.4)         |
 
 ## Qualitative Comparison
 
 ### JuMP:
   - Pluses
-    - Has the best syntax and is the easiest framework to write models. Retrieving solutions is fine, but could be simpler
+    - Has the best syntax and is the easiest framework to write models. 
+    - Retrieving solutions requires understanding data structures, but is still simple
+      - Improved with addition of [`Tables.jl` support](https://github.com/jump-dev/JuMP.jl/releases/tag/v1.4.0)
     - Decent performance and access to broad range of solvers
     - Most featured, including callbacks and more problem types beyond MIP (e.g. NLP, QP, SOCP)
     - Very very good documentation that is also a good intro to optimisation
@@ -62,8 +64,8 @@ Benchmarking MIP solutions across packages in Python and Julia
   - Downsides
     - Locked to LP or binary MIP as of Oct 22
     - In alpha
-    - Stricter model definition (min only, all variables on LHS)
-    - Intertemporal constraints are awkward to construct
+    - Stricter model definition (min only, all variables on LHS, variable * constant only)
+    - Constructing intertemporal constraints can require care (e.g. exclude t=0 intertemporal SoC constraint)
     
 ### pyomo
   - Pluses
