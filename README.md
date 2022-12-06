@@ -6,7 +6,6 @@ Benchmarking MIP solutions across packages in Python and Julia
 
 ## Python
 - [linopy](https://github.com/UNSW-CEEM/Battery-Optimisation-Benchmarking/blob/master/battery_optimisation_benchmarking/python/linopy.ipynb)
-  - Solution found but appears to be wrong based on what I think is a correct formulation
 - [python-mip](https://github.com/UNSW-CEEM/Battery-Optimisation-Benchmarking/blob/master/battery_optimisation_benchmarking/python/mip.ipynb)
 - [pyomo](https://github.com/prakaa/Battery-Optimisation-Benchmarking/blob/master/battery_optimisation_benchmarking/python/pyomo.ipynb)
 
